@@ -18,7 +18,6 @@ const winningAxes = [
 //main
 polje.forEach((el) => {
   el.addEventListener("click", () => {
-    // setSimbol(el);
     displayImage(el);
     checkDraw(count());
     checkWinner(count());
@@ -29,10 +28,7 @@ polje.forEach((el) => {
   });
 });
 
-//fukcija stavlja u dom element trenutnog igraca, text-size: 0 te se x ili o ne vidi
-function setSimbol(x) {
-  return (x.textContent = currentPlayer);
-}
+
 
 //mjenja igraca
 function switchPlayer(player) {
